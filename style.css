@@ -35,7 +35,7 @@
 .name {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .item-wrapper {
@@ -135,7 +135,7 @@
 }
 
 .task {
-  width: 226px
+  width: 226px;
 }
 
 .delete-img {
@@ -156,12 +156,12 @@
 
 /* Edit Task */
 .task-item .text-input{
-  display: none
+  display: none;
 }
 
 .edit-mode .text-input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .edit-mode .label {
