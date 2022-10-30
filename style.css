@@ -5,24 +5,24 @@
   font-family: "Lato", sans-serif;
 }
 
-.about {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.about-img {
+.header__img {
   width: 100%;
 }
 
-.about .link-more {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .about {
+  .header {
     text-align: center;
   }
 
@@ -33,23 +33,25 @@
   margin: 0 auto 0;
 }
 
-.name {
+.add-task__input,
+.item__input,
+.item__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.item-wrapper {
+.add-task__form {
   display: flex;
 }
 
-#tasks-list,
-#completed-tasks {
+.tasks__list,
+.done__list {
   margin: 0;
   padding: 0px;
 }
 
-.task-item, 
+.tasks__item, 
 .title {
   list-style: none;
 }
@@ -84,7 +86,8 @@
   text-transform: uppercase;
 }
 
-.text-input {
+.add-task__input,
+.item__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,22 +100,23 @@
   color: #888;
 }
 
-.text-input:focus {
+.add-task__input:focus,
+.item__input:focus {
   color: #333;
 }
 
 /* New Task */
-.title-label {
+.add-task__title {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-item {
+.add-task__input {
   width: 318px;
 }
 
 /* Task list */
-.task-item {
+.item{
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -127,7 +131,7 @@
   vertical-align: middle;
 }
 
-.checkbox-input {
+.item__checkbox {
   margin: 0 10px;
 }
 
@@ -138,36 +142,36 @@
   width: 226px;
 }
 
-.task {
+.item__label {
   width: 226px;
 }
 
-.delete-img {
+.item__btn-img_delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-img:hover {
+.item__btn-img_delete:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .label {
+.done__list .label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-item .text-input{
+.item__input{
   display: none;
 }
 
-.edit-mode .text-input {
+.tasks__item_edit .item__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .label {
+.tasks__item_edit .label {
   display: none;
 }
