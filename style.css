@@ -146,13 +146,13 @@
   width: 226px;
 }
 
-.item__btn-delete-img {
+.item__btn-img_delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.item__btn-delete-img:hover {
+.item__btn-img_delete:hover {
   transform: rotateZ(0);
 }
 
@@ -167,11 +167,11 @@
   display: none;
 }
 
-.tasks__item-edit .item__input {
+.tasks__item_edit .item__input {
   display: inline-block;
   width: 224px;
 }
 
-.tasks__item-edit .label {
+.tasks__item_edit .label {
   display: none;
 }
